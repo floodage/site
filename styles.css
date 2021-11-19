@@ -1,0 +1,379 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+body {
+    margin:0;
+  }
+  
+  h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight:500px;
+    font-size:48px;
+    color: #F3F3F3;
+    
+  }
+  .foottext {
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 1px;
+    font-size:14px;
+    color: white;
+  }
+  
+  .header {
+    position:relative;
+    text-align:center;
+    background-color: #0C1016;
+    color:white;
+  }
+  
+  .inner-header {
+    height:65vh;
+    width:100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .flex { /*Flexbox for containers*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .waves {
+    position:relative;
+    width: 100%;
+    height:15vh;
+    margin-bottom:-7px; /*Fix for safari gap*/
+    min-height:100px;
+    max-height:150px;
+  }
+  
+  .content {
+    position:relative;
+    height:20vh;
+    text-align:center;
+    background-color: #35AAC0;
+  }
+  
+  /* Animation */
+  
+  .parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+  }
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+  }
+  /*Shrinking for mobile*/
+  @media (max-width: 768px) {
+    .waves {
+      height:40px;
+      min-height:40px;
+    }
+    .content {
+      height:30vh;
+    }
+  }
+   
+  svg {
+    position: absolute;
+  }
+
+  #gooey-button {
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    filter: url("#gooey");
+    background-color: #35AAC0;
+    cursor: pointer;
+    font-family: 'Inter'; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    margin-top: 10rem;
+    font-weight: 700;
+    color: white;
+  }
+
+  #gooey-button:focus {
+    outline: none;
+  }
+  
+  #gooey-button:hover {
+  text-shadow: 0px 5px 100px white;
+  box-shadow: 0px 5px 100px rgba(255, 255, 255, 4);
+  }
+
+  #gooey-button .bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  #gooey-button .bubbles .bubble {
+    background-color: #35AAC0;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: -1;
+  }
+
+  #gooey-button .bubbles .bubble:nth-child(1) {
+    left: 83px;
+    width: 25px;
+    height: 25px;
+    animation: move-1 3.02s infinite;
+    animation-delay: 0.2s;
+  }
+
+  #gooey-button .bubbles .bubble:nth-child(2) {
+    left: 66px;
+    width: 25px;
+    height: 25px;
+    animation: move-2 3.04s infinite;
+    animation-delay: 0.4s;
+  }
+
+  #gooey-button .bubbles .bubble:nth-child(3) {
+    left: 61px;
+    width: 25px;
+    height: 25px;
+    animation: move-3 3.06s infinite;
+    animation-delay: 0.6s;
+  }
+
+  #gooey-button .bubbles .bubble:nth-child(4) {
+    left: 43px;
+    width: 25px;
+    height: 25px;
+    animation: move-4 3.08s infinite;
+    animation-delay: 0.8s;
+  }
+
+  #gooey-button .bubbles .bubble:nth-child(5) {
+    left: 53px;
+    width: 25px;
+    height: 25px;
+    animation: move-5 3.1s infinite;
+    animation-delay: 1s;
+  }
+
+  #gooey-button .bubbles .bubble:nth-child(6) {
+    left: 32px;
+    width: 25px;
+    height: 25px;
+    animation: move-6 3.12s infinite;
+    animation-delay: 1.2s;
+  }
+
+  #gooey-button .bubbles .bubble:nth-child(7) {
+    left: 14px;
+    width: 25px;
+    height: 25px;
+    animation: move-7 3.14s infinite;
+    animation-delay: 1.4s;
+  }
+
+  #gooey-button .bubbles .bubble:nth-child(8) {
+    left: 95px;
+    width: 25px;
+    height: 25px;
+    animation: move-8 3.16s infinite;
+    animation-delay: 1.6s;
+  }
+
+  #gooey-button .bubbles .bubble:nth-child(9) {
+    left: 33px;
+    width: 25px;
+    height: 25px;
+    animation: move-9 3.18s infinite;
+    animation-delay: 1.8s;
+  }
+
+  #gooey-button .bubbles .bubble:nth-child(10) {
+    left: 93px;
+    width: 25px;
+    height: 25px;
+    animation: move-10 3.2s infinite;
+    animation-delay: 2s;
+  }
+
+  @keyframes move-1 {
+    0% {
+      transform: translate(0, 0);
+    }
+
+    99% {
+      transform: translate(0, 97px);
+    }
+
+    100% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+  }
+
+  @keyframes move-2 {
+    0% {
+      transform: translate(0, 0);
+    }
+
+    99% {
+      transform: translate(0, 92px);
+    }
+
+    100% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+  }
+
+  @keyframes move-3 {
+    0% {
+      transform: translate(0, 0);
+    }
+
+    99% {
+      transform: translate(0, 71px);
+    }
+
+    100% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+  }
+
+  @keyframes move-4 {
+    0% {
+      transform: translate(0, 0);
+    }
+
+    99% {
+      transform: translate(0, 72px);
+    }
+
+    100% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+  }
+
+  @keyframes move-5 {
+    0% {
+      transform: translate(0, 0);
+    }
+
+    99% {
+      transform: translate(0, 88px);
+    }
+
+    100% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+  }
+
+  @keyframes move-6 {
+    0% {
+      transform: translate(0, 0);
+    }
+
+    99% {
+      transform: translate(0, 122px);
+    }
+
+    100% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+  }
+
+  @keyframes move-7 {
+    0% {
+      transform: translate(0, 0);
+    }
+
+    99% {
+      transform: translate(0, 102px);
+    }
+
+    100% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+  }
+
+  @keyframes move-8 {
+    0% {
+      transform: translate(0, 0);
+    }
+
+    99% {
+      transform: translate(0, 99px);
+    }
+
+    100% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+  }
+
+  @keyframes move-9 {
+    0% {
+      transform: translate(0, 0);
+    }
+
+    99% {
+      transform: translate(0, 126px);
+    }
+
+    100% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+  }
+
+  @keyframes move-10 {
+    0% {
+      transform: translate(0, 0);
+    }
+
+    99% {
+      transform: translate(0, 80px);
+    }
+
+    100% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+}
