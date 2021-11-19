@@ -1,19 +1,6 @@
-  body,
-  html {
-    align-items: center;
-    background-color: #0c1016;
-    display: flex;
-    font-size: 10px;
-    font-weight: bold;
-    height: 100%;
-    justify-content: center;
-    margin: 0;
-    padding: 0:
-    width: 100%;
-   
-  }
+  body {margin: 0;
+    
 
-  * {
     box-sizing: border-box;
   }
 
@@ -39,6 +26,16 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: 0.3s;
+    align-items: center;
+    background-color: #0c1016;
+    display: flex;
+    font-size: 10px;
+    font-weight: bold;
+    height: 100%;
+    justify-content: center;
+    margin: 0;
+    padding: 0:
+    width: 100%;
   }
 
   #gooey-button:focus {
