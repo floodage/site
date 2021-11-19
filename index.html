@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="styles.css">
+<div class="header">
+
+    <!--Content before waves-->
+    
+    <div class="inner-header flex">
+        <h1>Hello, I'm Travis.</h1>
+        <p>I protect people on the internet. 
+        </p>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+              <filter id="gooey">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+                <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="highContrastGraphic" />
+                <feComposite in="SourceGraphic" in2="highContrastGraphic" operator="atop" />
+              </filter>
+            </defs>
+          </svg>
+          <button href="mailto:f1ood.com" id="gooey-button">
+                Contact  
+              <span class="bubbles">
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+              </span>
+            </button>
+        
+    </div>
+   
+    
+    <!--Waves Container-->
+    <div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g class="parallax">
+    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(53, 170, 192,0.7" />
+    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(53, 170, 192,0.5)" />
+    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(53, 170, 192,0.3)" />
+    <use xlink:href="#gentle-wave" x="48" y="7" fill="#35AAC0" />
+    </g>
+    </svg>
+    </div>
+    <!--Waves end-->
+    
+    </div>
+    <!--Header ends-->
+    
+    <!--Content starts-->
+    <div class="content flex">
+    <p class= "foottext" > 2022 Flood© | All rights reserved</p>
+    </div>
