@@ -8,7 +8,36 @@
 
 <div class="inner-header flex">
 <!--Just the logo.. Don't mind this-->
-<h1>Flood</h1>
+<html>
+  <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Inter">
+
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="gooey">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+        <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="highContrastGraphic" />
+        <feComposite in="SourceGraphic" in2="highContrastGraphic" operator="atop" />
+      </filter>
+    </defs>
+  </svg>
+  <a href="mailto:info@f1ood.com"><button id="gooey-button">
+        Contact  
+      <span class="bubbles">
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+      </span>
+    </button>
+</body>
 </div>
 
 <!--Waves Container-->
@@ -23,6 +52,7 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
 <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(53, 170, 192,0.5)" />
 <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(53, 170, 192,0.3)" />
 <use xlink:href="#gentle-wave" x="48" y="7" fill="#35AAC0" />
+  </g>
 </div>
 <!--Waves end-->
 
